@@ -681,11 +681,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline-offset: none;
 }
 
-#weixin,#qq_{
+#weixin{
 	margin: auto;
-	width:200px;
-	height:200px;
-	background: #222222;
+	width:160px;
+	height:160px;
 }
 /* Footer */
 nav#footer {

@@ -18,6 +18,7 @@ $(window).scroll(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
           if (target.length) {
             $('html,body').animate({
               scrollTop: target.offset().top - 40
@@ -49,6 +50,7 @@ $(window).scroll(function() {
         navigation : false, // Show next and prev buttons
         slideSpeed : 300,
         paginationSpeed : 400,
+        autoPlay: true,
         singleItem:true
         });
 
@@ -99,10 +101,11 @@ $(window).scroll(function() {
 
   	/*====================================
     Pretty Photo
+    
     ======================================*/
-	$("a[rel^='prettyPhoto']").prettyPhoto({
-		social_tools: false
-	});	
+	// $("a[rel^='prettyPhoto']").prettyPhoto({
+	// 	social_tools: false
+	// });	
 
 }());
 
